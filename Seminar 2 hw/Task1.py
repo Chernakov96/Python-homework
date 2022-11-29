@@ -6,7 +6,7 @@
 # 67.82 -> 23
 # (-0.56) -> 11
 
-real_number = float(input("Введите целое: "))
+real_number = float(input("Введите дробное число через '.' "))
 if real_number < 0:
     real_number *= -1
 
