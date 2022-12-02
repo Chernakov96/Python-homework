@@ -3,12 +3,28 @@
 # для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
 def fibonacci_positive(num):
+    """
+    Finds positive fibonacci numbers.
+    
+    Args:
+        num - length of the fibonacci list
+    Returns: 
+        fibonacci list 
+    """ 
     if num in [1, 2]:
         return 1
     else:
         return fibonacci_positive(num - 1) + fibonacci_positive(num - 2)
 
 def fibonacci_negative(num):
+    """
+    Finds negative fibonacci numbers.
+    
+    Args:
+        num - length of the fibonacci list
+    Returns: 
+        negative fibonacci list 
+    """ 
     if num == 1:
         return 1
     elif num == 2:
@@ -21,6 +37,14 @@ def fibonacci_negative(num):
 
 
 def add_two_fibonacci(num):
+    """
+    Compiles negative and positive fibonacci lists.
+    
+    Args:
+        num - length of the fibonacci list
+    Returns: 
+        negative + positive fibonacci list 
+    """ 
     result = []
     result.append(0)
     for i in range(1, num + 1):

@@ -6,12 +6,28 @@
 import random
 
 def create_random_list(num):
+    """
+    Creates a list filled with positive random numbers from 0 to 9.
+    
+    Args:
+        num - length of the list, decided by user
+    Returns: 
+        list 
+    """ 
     new_list = []
     for number in range (num):
         new_list.append(random.randint(0,9))
     return new_list
 
 def multiply_pairs(default_list):
+    """
+    Multiplies pairs in list(pair is first element and last, second element and second to last etc...).
+    
+    Args:
+        default_list - list that was previously created
+    Returns: 
+        list 
+    """ 
     result = []
     if int(len(default_list))%2 == 0:
         for number in range(int(len(default_list) / 2)):

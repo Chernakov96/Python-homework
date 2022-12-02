@@ -8,6 +8,14 @@ import random
 
 
 def create_random_list(num):
+    """
+    Creates a list filled with positive random floats with up to three numbers in fractional part.
+    
+    Args:
+        num - length of the list, decided by user
+    Returns: 
+        list 
+    """ 
     result_list = []
     for i in range(num):
         f = random.uniform(0, 9)
@@ -16,11 +24,28 @@ def create_random_list(num):
     return result_list
 
 def float_side(num):
+    """
+    Finds float part of the element.
+    
+    Args:
+        num - an element of list
+    Returns: 
+        rounded float 
+    """ 
     result = num - int(num)
     return round(result, 3)
 
 
 def diff_min_max_float(list):
+    """
+    Finds the difference between the largest floating part and the smallest floating part 
+    of the element in the list.
+    
+    Args:
+        list - list with floats created by user
+    Returns: 
+        float - the difference between max and min float numbers 
+    """ 
     min_float = float_side(list[0])
     max_float = float_side(list[0])
 

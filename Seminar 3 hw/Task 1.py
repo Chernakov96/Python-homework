@@ -5,6 +5,14 @@ import random
 
 
 def create_random_list(num):
+    """
+    Creates a list filled with positive random numbers from 0 to 9.
+    
+    Args:
+        num - length of the list, decided by user
+    Returns: 
+        list 
+    """    
     new_list = []
     for number in range(num):
         new_list.append(random.randint(0, 9))
@@ -12,6 +20,14 @@ def create_random_list(num):
 
 
 def SumEvenElements(list):
+    """
+    Sums up every odd element of the list.
+    
+    Args:
+        list - a list, from which the selection would be performed
+    Returns: 
+        list of odd numbers
+    """ 
     result = 0
     for i in range(len(list)):
         if i % 2 == 1:
