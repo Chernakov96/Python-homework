@@ -21,7 +21,7 @@ def multiply_pairs(default_list):
             result.append(default_list[number] * default_list[(len(default_list) - 1) - number])
     return result
 
-amount_of_elements = int(input('Какого размера сгенерировать массив: '))
+amount_of_elements = int(input('Какого размера сгенерировать массив: \n'))
 user_list = create_random_list(amount_of_elements)
 print(user_list)
 list_of_pairs = multiply_pairs(user_list)

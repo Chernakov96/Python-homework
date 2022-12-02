@@ -19,7 +19,7 @@ def SumEvenElements(list):
     return result
 
 
-amount_of_elements = int(input('Какого размера сгенерировать массив: '))
+amount_of_elements = int(input('Какого размера сгенерировать массив: \n'))
 my_list = create_random_list(amount_of_elements)
 print(my_list)
 summ_elements = SumEvenElements(my_list)

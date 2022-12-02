@@ -33,7 +33,7 @@ def diff_min_max_float(list):
     result = (max_float - min_float)
     return round(result, 3)
 
-number = int(input('Введите размер списка '))
+number = int(input('Введите размер списка \n'))
 my_list = create_random_list(number)
 print(my_list)
 diff_float = diff_min_max_float(my_list)
