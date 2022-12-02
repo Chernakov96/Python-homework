@@ -4,7 +4,7 @@
 import random
 
 
-def CreateRandList(num):
+def create_random_list(num):
     new_list = []
     for number in range(num):
         new_list.append(random.randint(0, 9))
@@ -19,8 +19,8 @@ def SumEvenElements(list):
     return result
 
 
-count_element = int(input('Какого размера сгенерировать массив: '))
-my_list = CreateRandList(count_element)
+amount_of_elements = int(input('Какого размера сгенерировать массив: '))
+my_list = create_random_list(amount_of_elements)
 print(my_list)
 summ_elements = SumEvenElements(my_list)
 print(summ_elements)
