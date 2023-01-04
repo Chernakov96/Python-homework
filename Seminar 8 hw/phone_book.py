@@ -37,6 +37,6 @@ def find_contact():
 def change_contact():
     global phone_book
     id = view.input_change_contact()
-    del_contact = phone_book.pop(id)
+    del_contact = phone_book.pop(id-1)
     id = view.input_new_contact()
     phone_book.append(id)
