@@ -1,9 +1,6 @@
 from aiogram.utils import executor
 from config import dp
 import handlers
-from random import randint
-import commands
-from aiogram import types
 
 
 async def bot_start(_):
